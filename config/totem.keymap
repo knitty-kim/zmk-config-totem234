@@ -29,28 +29,28 @@
 
         nav_num {
             bindings = <
-                  &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp N5      &kp N6          &kp N7        &kp N8        &kp N9
-                  &kp TAB      &kp LEFT       &kp DOWN   &kp RIGHT   &kp BACKSLASH    &kp N0      &kp N1          &kp N2        &kp N3        &kp N4
-&kp LEFT_CONTROL  &kp PAGE_UP  &kp HOME       &kp ENTER  &kp END     &kp PAGE_DOWN    &kp PERIOD  &kp PLUS        &kp MINUS     &kp ASTERISK  &kp SLASH  &kp RIGHT_CONTROL
-                                              &trans     &trans      &trans           &kp SPACE   &kp LEFT_SHIFT  &kp LEFT_ALT
+                  &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp EQUAL  &kp N7          &kp N8        &kp N9  &kp PERIOD
+                  &kp TAB      &kp LEFT       &kp DOWN   &kp RIGHT   &kp BACKSLASH    &kp MINUS  &kp N4          &kp N5        &kp N6  &kp ASTERISK
+&kp LEFT_CONTROL  &kp PAGE_UP  &kp HOME       &kp ENTER  &kp END     &kp PAGE_DOWN    &kp N0     &kp N1          &kp N2        &kp N3  &kp SLASH     &kp LEFT_CONTROL
+                                              &trans     &trans      &trans           &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
         sym_func {
             bindings = <
-                  &kp ESC        &kp LEFT_BRACE        &none       &kp RIGHT_BRACE        &kp LEFT_CONTROL    &kp F1     &kp F2          &kp F3        &kp F4   &kp F5
-                  &kp TAB        &kp LBKT              &kp LSHIFT  &kp RBKT               &kp LEFT_ALT        &kp F6     &kp F7          &kp F8        &kp F9   &kp F10
-&kp LEFT_CONTROL  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp ENTER   &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp F11    &kp F12         &kp F13       &kp F14  &kp F15  &kp F16
-                                                       &trans      &trans                 &trans              &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT
+                  &kp ESC        &kp LEFT_BRACE        &none       &kp RIGHT_BRACE        &kp LEFT_CONTROL    &kp CAPS        &kp F7          &kp F8        &kp F9  &kp F12
+                  &kp TAB        &kp LBKT              &kp LSHIFT  &kp RBKT               &kp LEFT_ALT        &kp LANGUAGE_1  &kp F4          &kp F5        &kp F6  &kp F11
+&kp LEFT_CONTROL  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp ENTER   &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp LANGUAGE_2  &kp F1          &kp F2        &kp F3  &kp F10  &none
+                                                       &trans      &trans                 &trans              &kp SPACE       &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
         device {
             bindings = <
-       &none        &kp LA(BACKSPACE)   &kp LG(UP_ARROW)    &kp LA(DELETE)       &kp CAPS          &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &kp LG(TAB)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LANGUAGE_1    &kp C_BRI_UP  &kp C_VOL_UP    &none         &none         &none
-&none  &none        &none               &none               &none                &kp LANGUAGE_2    &kp C_BRI_DN  &kp C_VOL_DN    &none         &none         &none         &bt BT_CLR
-                                        &trans              &trans               &trans            &none         &kp LEFT_SHIFT  &kp LEFT_ALT
+       &none        &kp LA(BACKSPACE)   &kp LG(UP_ARROW)    &kp LA(DELETE)       &none     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+       &kp LG(TAB)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none     &kp C_BRI_UP  &kp C_VOL_UP    &none         &none         &none
+&none  &none        &none               &none               &none                &none     &kp C_BRI_DN  &kp C_VOL_DN    &none         &none         &none         &bt BT_CLR
+                                        &trans              &trans               &trans    &none         &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
