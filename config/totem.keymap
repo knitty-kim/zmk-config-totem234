@@ -42,197 +42,6 @@
             require-prior-idle-ms = <0>;
             timeout-ms = <300>;
         };
-
-        mous_up1 {
-            bindings = <&mmv MOVE_Y(-200)>;
-            key-positions = <35 2>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_dn1 {
-            bindings = <&mmv MOVE_Y(200)>;
-            key-positions = <35 12>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_left1 {
-            bindings = <&mmv MOVE_X(-200)>;
-            key-positions = <35 11>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_right1 {
-            bindings = <&mmv MOVE_X(200)>;
-            key-positions = <35 13>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_up2 {
-            bindings = <&mmv MOVE_Y(-400)>;
-            key-positions = <2 36>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_dn2 {
-            bindings = <&mmv MOVE_Y(400)>;
-            key-positions = <12 36>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_left2 {
-            bindings = <&mmv MOVE_X(-400)>;
-            key-positions = <11 36>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_right2 {
-            bindings = <&mmv MOVE_X(400)>;
-            key-positions = <13 36>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_up3 {
-            bindings = <&mmv MOVE_Y(-600)>;
-            key-positions = <2 37>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_dn3 {
-            bindings = <&mmv MOVE_Y(600)>;
-            key-positions = <12 37>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_left3 {
-            bindings = <&mmv MOVE_X(-600)>;
-            key-positions = <11 37>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        mous_right3 {
-            bindings = <&mmv MOVE_X(600)>;
-            key-positions = <13 37>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_up1 {
-            bindings = <&msc MOVE_Y(10)>;
-            key-positions = <2 5>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_dn1 {
-            bindings = <&msc MOVE_Y(-10)>;
-            key-positions = <5 12>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_left1 {
-            bindings = <&msc MOVE_X(-10)>;
-            key-positions = <5 11>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-        };
-
-        scrl_right1 {
-            bindings = <&msc MOVE_X(10)>;
-            key-positions = <5 13>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_up2 {
-            bindings = <&msc MOVE_Y(15)>;
-            key-positions = <2 15>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_dn2 {
-            bindings = <&msc MOVE_Y(-15)>;
-            key-positions = <12 15>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_left2 {
-            bindings = <&msc MOVE_X(-15)>;
-            key-positions = <11 15>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_right2 {
-            bindings = <&msc MOVE_X(15)>;
-            key-positions = <13 15>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_up3 {
-            bindings = <&msc MOVE_Y(20)>;
-            key-positions = <2 26>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_dn3 {
-            bindings = <&msc MOVE_Y(-20)>;
-            key-positions = <12 26>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_left3 {
-            bindings = <&msc MOVE_X(-20)>;
-            key-positions = <11 26>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
-
-        scrl_right3 {
-            bindings = <&msc MOVE_X(20)>;
-            key-positions = <13 26>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
-        };
     };
 
     keymap {
@@ -258,10 +67,10 @@
 
         mous_func {
             bindings = <
-           &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none     &kp RIGHT_CONTROL  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-           &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &kp RIGHT_SHIFT    &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&kp TILDE  &none  &none           &mkp MCLK       &none            &none     &kp RIGHT_ALT      &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
-                                  &trans          &trans           &trans    &kp SPACE          &kp LEFT_SHIFT  &kp LEFT_ALT
+           &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none     &mo 7  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &mo 8  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none           &mkp MCLK       &none            &none     &mo 9  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                  &trans          &trans           &trans    &mo 4  &mo 5           &mo 6
             >;
         };
 
@@ -274,11 +83,59 @@
             >;
         };
 
-        extra { status = "reserved"; };
+        mous-300 {
+            bindings = <
+           &none  &mkp LCLK          &mmv MOVE_Y(-300)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none              &mkp MCLK          &none             &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                     &trans             &trans            &trans    &trans  &trans          &trans
+            >;
+        };
 
-        extra2 { status = "reserved"; };
+        mous-1200 {
+            bindings = <
+           &none  &mkp LCLK          &mmv MOVE_Y(-300)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none              &mkp MCLK          &none             &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                     &trans             &trans            &trans    &trans  &trans          &trans
+            >;
+        };
 
-        extra3 { status = "reserved"; };
+        mous-1800 {
+            bindings = <
+           &none  &mkp LCLK          &mmv MOVE_Y(-300)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none              &mkp MCLK          &none             &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                     &trans             &trans            &trans    &trans  &trans          &trans
+            >;
+        };
+
+        scroll-10 {
+            bindings = <
+           &none  &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none           &mkp MCLK       &none            &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                  &trans          &trans           &trans    &trans  &trans          &trans
+            >;
+        };
+
+        scroll-20 {
+            bindings = <
+           &none  &mkp LCLK         &msc MOVE_Y(20)   &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none             &mkp MCLK         &none            &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                    &trans            &trans           &trans    &trans  &trans          &trans
+            >;
+        };
+
+        scroll-40 {
+            bindings = <
+           &none  &mkp LCLK         &msc MOVE_Y(20)   &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none             &mkp MCLK         &none            &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                    &trans            &trans           &trans    &trans  &trans          &trans
+            >;
+        };
     };
 
     conditional_layers {
