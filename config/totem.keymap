@@ -112,8 +112,8 @@
 
         mous-1200 {
             bindings = <
-           &none  &mkp LCLK          &mmv MOVE_Y(-300)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-           &none  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+           &none  &mkp LCLK          &mmv MOVE_Y(-1200)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_X(-1200)  &mmv MOVE_Y(1200)   &mmv MOVE_X(1200)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
 &kp TILDE  &none  &none              &mkp MCLK          &none             &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
                                      &trans             &trans            &trans    &trans  &trans          &trans
             >;
@@ -139,8 +139,8 @@
 
         scroll-40 {
             bindings = <
-           &none  &mkp LCLK         &msc MOVE_Y(20)   &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-           &none  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+           &none  &mkp LCLK         &msc MOVE_Y(40)   &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &msc MOVE_X(-40)  &msc MOVE_Y(-40)  &msc MOVE_X(40)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
 &kp TILDE  &none  &none             &mkp MCLK         &none            &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
                                     &trans            &trans           &trans    &trans  &trans          &trans
             >;
