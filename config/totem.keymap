@@ -15,6 +15,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mmv {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <1>;
+};
+
+&msc { time-to-max-speed-ms = <100>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -92,16 +99,16 @@
             >;
         };
 
-        mous-1200 {
+        mous-600 {
             bindings = <
-           &none  &mkp LCLK          &mmv MOVE_Y(-300)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-           &none  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+           &none  &mkp LCLK          &mmv MOVE_Y(-600)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
 &kp TILDE  &none  &none              &mkp MCLK          &none             &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
                                      &trans             &trans            &trans    &trans  &trans          &trans
             >;
         };
 
-        mous-1800 {
+        mous-1200 {
             bindings = <
            &none  &mkp LCLK          &mmv MOVE_Y(-300)  &mkp RCLK         &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
            &none  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
@@ -112,10 +119,10 @@
 
         scroll-10 {
             bindings = <
-           &none  &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-           &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&kp TILDE  &none  &none           &mkp MCLK       &none            &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
-                                  &trans          &trans           &trans    &trans  &trans          &trans
+           &none  &mkp LCLK         &msc MOVE_Y(10)   &mkp RCLK        &none     &trans  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &msc MOVE_X(-10)  &msc MOVE_Y(-10)  &msc MOVE_X(10)  &none     &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none             &mkp MCLK         &none            &none     &trans  &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                    &trans            &trans           &trans    &trans  &trans          &trans
             >;
         };
 
