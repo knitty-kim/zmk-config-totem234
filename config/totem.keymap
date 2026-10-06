@@ -13,8 +13,202 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        kor+eng {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <37 28 29>;
+            layers = <0>;
+            require-prior-idle-ms = <0>;
+        };
+
+        kor+chn {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <37 28 30>;
+            layers = <0>;
+            require-prior-idle-ms = <0>;
+        };
+
+        capslo {
+            bindings = <&kp CAPS>;
+            key-positions = <37 30 29>;
+            layers = <0>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_up1 {
+            bindings = <&mmv MOVE_Y(-200)>;
+            key-positions = <35 2>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_dn1 {
+            bindings = <&mmv MOVE_Y(200)>;
+            key-positions = <35 12>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_left1 {
+            bindings = <&mmv MOVE_X(-200)>;
+            key-positions = <35 11>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_right1 {
+            bindings = <&mmv MOVE_X(200)>;
+            key-positions = <35 13>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_up2 {
+            bindings = <&mmv MOVE_Y(-400)>;
+            key-positions = <2 36>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_dn2 {
+            bindings = <&mmv MOVE_Y(400)>;
+            key-positions = <12 36>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_left2 {
+            bindings = <&mmv MOVE_X(-400)>;
+            key-positions = <11 36>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_right2 {
+            bindings = <&mmv MOVE_X(400)>;
+            key-positions = <13 36>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_up3 {
+            bindings = <&mmv MOVE_Y(-600)>;
+            key-positions = <2 37>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_dn3 {
+            bindings = <&mmv MOVE_Y(600)>;
+            key-positions = <12 37>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_left3 {
+            bindings = <&mmv MOVE_X(-600)>;
+            key-positions = <11 37>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        mous_right3 {
+            bindings = <&mmv MOVE_X(600)>;
+            key-positions = <13 37>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_up1 {
+            bindings = <&msc MOVE_Y(10)>;
+            key-positions = <2 5>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_dn1 {
+            bindings = <&msc MOVE_Y(-10)>;
+            key-positions = <5 12>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_left1 {
+            bindings = <&msc MOVE_X(-10)>;
+            key-positions = <5 11>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_right1 {
+            bindings = <&msc MOVE_X(10)>;
+            key-positions = <5 13>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_up2 {
+            bindings = <&msc MOVE_Y(15)>;
+            key-positions = <2 15>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_dn2 {
+            bindings = <&msc MOVE_Y(-15)>;
+            key-positions = <12 15>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_left2 {
+            bindings = <&msc MOVE_X(-15)>;
+            key-positions = <11 15>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_right2 {
+            bindings = <&msc MOVE_X(15)>;
+            key-positions = <13 15>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_up3 {
+            bindings = <&msc MOVE_Y(20)>;
+            key-positions = <2 26>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_dn3 {
+            bindings = <&msc MOVE_Y(-20)>;
+            key-positions = <12 26>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_left3 {
+            bindings = <&msc MOVE_X(-20)>;
+            key-positions = <11 26>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+
+        scrl_right3 {
+            bindings = <&msc MOVE_X(20)>;
+            key-positions = <13 26>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,38 +217,38 @@
            &kp Q  &kp W  &kp E         &kp R  &kp T    &kp Y      &kp U           &kp I         &kp O    &kp P
            &kp A  &kp S  &kp D         &kp F  &kp G    &kp H      &kp J           &kp K         &kp L    &kp SEMI
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp V  &kp B    &kp N      &kp M           &kp COMMA     &kp DOT  &kp FSLH  &kp APOS
-                         &kp LEFT_GUI  &mo 2  &mo 1    &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT
+                         &kp LEFT_WIN  &mo 2  &mo 1    &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
         nav_num {
             bindings = <
-                  &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp EQUAL  &kp N7          &kp N8        &kp N9  &kp PERIOD
-                  &kp TAB      &kp LEFT       &kp DOWN   &kp RIGHT   &kp BACKSLASH    &kp MINUS  &kp N4          &kp N5        &kp N6  &kp ASTERISK
-&kp LEFT_CONTROL  &kp PAGE_UP  &kp HOME       &kp ENTER  &kp END     &kp PAGE_DOWN    &kp N0     &kp N1          &kp N2        &kp N3  &kp SLASH     &kp LEFT_CONTROL
-                                              &trans     &trans      &trans           &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT
+                  &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp PLUS      &kp N7          &kp N8        &kp N9  &kp ASTERISK
+                  &kp TAB      &kp LEFT       &kp DOWN   &kp RIGHT   &kp BACKSLASH    &kp MINUS     &kp N4          &kp N5        &kp N6  &kp SLASH
+&kp LEFT_CONTROL  &kp PAGE_UP  &kp HOME       &kp ENTER  &kp END     &kp PAGE_DOWN    &kp N0        &kp N1          &kp N2        &kp N3  &kp PERIOD    &kp LEFT_CONTROL
+                                              &trans     &trans      &trans           &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
-        sym_func {
+        mous_func {
             bindings = <
-                  &kp ESC        &kp LEFT_BRACE        &none       &kp RIGHT_BRACE        &kp LEFT_CONTROL    &kp CAPS        &kp F7          &kp F8        &kp F9  &kp F12
-                  &kp TAB        &kp LBKT              &kp LSHIFT  &kp RBKT               &kp LEFT_ALT        &kp LANGUAGE_1  &kp F4          &kp F5        &kp F6  &kp F11
-&kp LEFT_CONTROL  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp ENTER   &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp LANGUAGE_2  &kp F1          &kp F2        &kp F3  &kp F10  &none
-                                                       &trans      &trans                 &trans              &kp SPACE       &kp LEFT_SHIFT  &kp LEFT_ALT
+           &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none     &kp RIGHT_CONTROL  &kp EQUAL       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+           &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &kp RIGHT_SHIFT    &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp TILDE  &none  &none           &mkp MCLK       &none            &none     &kp RIGHT_ALT      &kp LESS_THAN   &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
+                                  &trans          &trans           &trans    &kp SPACE          &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
         device {
             bindings = <
-       &none        &kp LA(BACKSPACE)   &kp LG(UP_ARROW)    &kp LA(DELETE)       &none     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &kp LG(TAB)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none     &kp C_BRI_UP  &kp C_VOL_UP    &none         &none         &none
-&none  &none        &none               &none               &none                &none     &kp C_BRI_DN  &kp C_VOL_DN    &none         &none         &none         &bt BT_CLR
-                                        &trans              &trans               &trans    &none         &kp LEFT_SHIFT  &kp LEFT_ALT
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp F7      &kp F8    &kp F9  &kp F12
+            &kp C_BRI_UP  &kp C_VOL_UP  &none         &none         &none           &none  &kp F4      &kp F5    &kp F6  &kp F11
+&bt BT_CLR  &kp C_BRI_DN  &kp C_VOL_DN  &none         &none         &none           &none  &kp F1      &kp F2    &kp F3  &kp F10  &none
+                                        &trans        &trans        &trans          &none  &kp LSHIFT  &kp LALT
             >;
         };
 
-        extra1 { status = "reserved"; };
+        extra { status = "reserved"; };
 
         extra2 { status = "reserved"; };
 
