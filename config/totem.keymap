@@ -10,7 +10,7 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80    // default: 10
 
 #include <behaviors.dtsi>
@@ -77,8 +77,8 @@
 
         mous-1000 {
             bindings = <
-           &none      &mkp LCLK           &mmv MOVE_Y(-1200)  &mkp RCLK          &none     &mo 7  &mkp LCLK      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LSHIFT
-           &none      &mmv MOVE_X(-1200)  &mmv MOVE_Y(1200)   &mmv MOVE_X(1200)  &none     &mo 8  &mkp RCLK      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LCTRL
+           &none      &mkp LCLK           &mmv MOVE_Y(-1000)  &mkp RCLK          &none     &mo 7  &mkp LCLK      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LSHIFT
+           &none      &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LCTRL
 &kp TILDE  &kp EQUAL  &kp UNDERSCORE      &mkp MCLK           &none              &none     &mo 9  &kp LESS_THAN  &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
                                           &trans              &trans             &trans    &mo 4  &mo 5          &mo 6
             >;
