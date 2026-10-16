@@ -68,7 +68,7 @@
 
         nav_num {
             bindings = <
-                  &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp PLUS      &kp N7          &kp N8        &kp N9  &kp PERIOD
+                  &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp EQUAL     &kp N7          &kp N8        &kp N9  &kp PERIOD
                   &kp TAB      &kp LEFT       &kp DOWN   &kp RIGHT   &kp BACKSLASH    &kp MINUS     &kp N4          &kp N5        &kp N6  &kp ASTERISK
 &kp LEFT_CONTROL  &kp PAGE_UP  &kp HOME       &kp ENTER  &kp END     &kp PAGE_DOWN    &kp N0        &kp N1          &kp N2        &kp N3  &kp SLASH     &kp LEFT_CONTROL
                                               &trans     &trans      &trans           &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_ALT
@@ -77,72 +77,72 @@
 
         mous-1000 {
             bindings = <
-           &none      &mkp LCLK           &mmv MOVE_Y(-1000)  &mkp RCLK          &none     &mo 7  &mkp LCLK      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LSHIFT
-           &none      &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LCTRL
-&kp TILDE  &kp EQUAL  &kp UNDERSCORE      &mkp MCLK           &none              &none     &mo 9  &kp LESS_THAN  &kp LPAR          &kp RPAR           &kp GREATER_THAN  &kp EXCLAMATION
-                                          &trans              &trans             &trans    &mo 4  &mo 5          &mo 6
+                  &none  &mkp LCLK           &mmv MOVE_Y(-1000)  &mkp RCLK          &kp TILDE    &mo 7  &mkp LCLK        &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+                  &none  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &kp PIPE     &mo 8  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp LEFT_CONTROL  &none  &kp LESS_THAN       &kp ENTER           &kp GREATER_THAN   &none        &mo 9  &kp EXCLAMATION  &kp LPAR          &kp RPAR           &kp QUESTION  &kp LEFT_CONTROL
+                                             &trans              &trans             &trans       &mo 4  &mo 5            &mo 6
             >;
         };
 
         device {
             bindings = <
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none      &kp F7      &kp F8    &kp F9  &kp F12
-            &kp C_BRI_UP  &kp C_VOL_UP  &none         &none         &none           &none      &kp F4      &kp F5    &kp F6  &kp F11
-&bt BT_CLR  &kp C_BRI_DN  &kp C_VOL_DN  &none         &none         &none           &none      &kp F1      &kp F2    &kp F3  &kp F10  &none
-                                        &trans        &trans        &trans          &kp LCTRL  &kp LSHIFT  &kp LALT
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none         &kp F7      &kp F8    &kp F9  &kp F12
+            &kp C_BRI_UP  &kp C_VOL_UP  &none         &none         &none           &none         &kp F4      &kp F5    &kp F6  &kp F11
+&bt BT_CLR  &kp C_BRI_DN  &kp C_VOL_DN  &none         &none         &none           &none         &kp F1      &kp F2    &kp F3  &kp F10  &kp LEFT_CONTROL
+                                        &trans        &trans        &trans          &kp LEFT_WIN  &kp LSHIFT  &kp LALT
             >;
         };
 
         mous-300 {
             bindings = <
-        &none   &trans             &mmv MOVE_Y(-300)  &trans            &none     &trans  &trans  &trans  &trans  &trans
-        &none   &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &none     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans             &trans             &none             &none     &trans  &trans  &trans  &trans  &trans  &trans
+        &none   &trans             &mmv MOVE_Y(-300)  &trans            &trans    &trans  &trans  &trans  &trans  &trans
+        &none   &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &trans             &trans            &none     &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans             &trans            &trans    &trans  &trans  &trans
             >;
         };
 
         mous-600 {
             bindings = <
-        &none   &trans             &mmv MOVE_Y(-600)  &trans            &none     &trans  &trans  &trans  &trans  &trans
-        &none   &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &none     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans             &trans             &none             &none     &trans  &trans  &trans  &trans  &trans  &trans
+        &none   &trans             &mmv MOVE_Y(-600)  &trans            &trans    &trans  &trans  &trans  &trans  &trans
+        &none   &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &trans             &trans            &none     &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans             &trans            &trans    &trans  &trans  &trans
             >;
         };
 
         mous-1600 {
             bindings = <
-        &none   &trans          &mmv MOVE_UP    &trans           &none     &trans  &trans  &trans  &trans  &trans
-        &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &none            &none     &trans  &trans  &trans  &trans  &trans  &trans
+        &none   &trans          &mmv MOVE_UP    &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans  &trans
             >;
         };
 
         scroll-20 {
             bindings = <
-        &none   &trans            &msc MOVE_Y(20)   &trans           &none     &trans  &trans  &trans  &trans  &trans
-        &none   &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &none     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &trans            &none            &none     &trans  &trans  &trans  &trans  &trans  &trans
+        &none   &trans            &msc MOVE_Y(20)   &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &none   &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans            &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans            &trans           &trans    &trans  &trans  &trans
             >;
         };
 
         scroll-40 {
             bindings = <
-        &none   &trans            &msc MOVE_Y(40)   &trans           &none     &trans  &trans  &trans  &trans  &trans
-        &none   &msc MOVE_X(-40)  &msc MOVE_Y(-40)  &msc MOVE_X(40)  &none     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &trans            &none            &none     &trans  &trans  &trans  &trans  &trans  &trans
+        &none   &trans            &msc MOVE_Y(40)   &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &none   &msc MOVE_X(-40)  &msc MOVE_Y(-40)  &msc MOVE_X(40)  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans            &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans            &trans           &trans    &trans  &trans  &trans
             >;
         };
 
         scroll-80 {
             bindings = <
-        &none   &trans          &msc SCRL_UP    &trans           &none     &trans  &trans  &trans  &trans  &trans
-        &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &none            &none     &trans  &trans  &trans  &trans  &trans  &trans
+        &none   &trans          &msc SCRL_UP    &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans  &trans
             >;
         };
