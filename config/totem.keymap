@@ -31,7 +31,7 @@
 
         kor+eng {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <37 28 29>;
+            key-positions = <28 29 36>;
             layers = <0>;
             require-prior-idle-ms = <0>;
             timeout-ms = <300>;
@@ -39,7 +39,7 @@
 
         kor+chn {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <37 28 30>;
+            key-positions = <28 30 36>;
             layers = <0>;
             require-prior-idle-ms = <0>;
             timeout-ms = <300>;
@@ -47,7 +47,7 @@
 
         capslo {
             bindings = <&kp CAPS>;
-            key-positions = <37 30 29>;
+            key-positions = <30 29 36>;
             layers = <0>;
             require-prior-idle-ms = <0>;
             timeout-ms = <300>;
