@@ -77,10 +77,10 @@
 
         mous-1000 {
             bindings = <
-                  &none  &kp BACKSPACE       &mmv MOVE_Y(-1000)  &kp DELETE         &kp TILDE    &mo 7  &mkp LCLK        &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-                  &none  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &kp PIPE     &mo 8  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&kp LEFT_CONTROL  &none  &kp LESS_THAN       &kp ENTER           &kp GREATER_THAN   &none        &mo 9  &kp EXCLAMATION  &kp LPAR          &kp RPAR           &kp QUESTION  &kp LEFT_CONTROL
-                                             &trans              &trans             &trans       &mo 4  &mo 5            &mo 6
+                  &none           &kp BACKSPACE       &mmv MOVE_Y(-1000)  &kp DELETE         &kp TILDE    &mo 7  &mkp LCLK        &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+                  &kp LEFT_SHIFT  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)  &kp PIPE     &mo 8  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp LEFT_CONTROL  &none           &kp LESS_THAN       &kp ENTER           &kp GREATER_THAN   &none        &mo 9  &kp EXCLAMATION  &kp LPAR          &kp RPAR           &kp QUESTION  &kp LEFT_CONTROL
+                                                      &trans              &trans             &trans       &mo 4  &mo 5            &mo 6
             >;
         };
 
@@ -96,7 +96,7 @@
         mous-300 {
             bindings = <
         &none   &trans             &mmv MOVE_Y(-300)  &trans            &trans    &trans  &trans  &trans  &trans  &trans
-        &none   &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans             &trans             &trans            &none     &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans             &trans            &trans    &trans  &trans  &trans
             >;
@@ -105,7 +105,7 @@
         mous-600 {
             bindings = <
         &none   &trans             &mmv MOVE_Y(-600)  &trans            &trans    &trans  &trans  &trans  &trans  &trans
-        &none   &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans             &trans             &trans            &none     &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans             &trans            &trans    &trans  &trans  &trans
             >;
@@ -114,7 +114,7 @@
         mous-1600 {
             bindings = <
         &none   &trans          &mmv MOVE_UP    &trans           &trans    &trans  &trans  &trans  &trans  &trans
-        &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans  &trans
             >;
@@ -123,7 +123,7 @@
         scroll-20 {
             bindings = <
         &none   &trans            &msc MOVE_Y(20)   &trans           &trans    &trans  &trans  &trans  &trans  &trans
-        &none   &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_X(20)  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans            &trans            &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans            &trans           &trans    &trans  &trans  &trans
             >;
@@ -132,7 +132,7 @@
         scroll-40 {
             bindings = <
         &none   &trans            &msc MOVE_Y(40)   &trans           &trans    &trans  &trans  &trans  &trans  &trans
-        &none   &msc MOVE_X(-40)  &msc MOVE_Y(-40)  &msc MOVE_X(40)  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &msc MOVE_X(-40)  &msc MOVE_Y(-40)  &msc MOVE_X(40)  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans            &trans            &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans            &trans           &trans    &trans  &trans  &trans
             >;
@@ -141,7 +141,7 @@
         scroll-80 {
             bindings = <
         &none   &trans          &msc SCRL_UP    &trans           &trans    &trans  &trans  &trans  &trans  &trans
-        &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &none     &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans  &trans
             >;
