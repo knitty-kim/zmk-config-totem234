@@ -113,10 +113,10 @@
 
         mous-1000 {
             bindings = <
-                  &none           &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &kp TILDE    &mo 7  &mkp LCLK        &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-                  &kp LEFT_SHIFT  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &kp PIPE     &mo 8  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&kp LEFT_CONTROL  &none           &none                 &kp ENTER             &none              &none        &mo 9  &kp EXCLAMATION  &kp LPAR          &kp RPAR           &kp QUESTION  &kp LEFT_CONTROL
-                                                        &trans                &trans             &trans       &mo 4  &mo 5            &mo 6
+                  &none  &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &none     &mo 7  &mkp LCLK  &none  &none  &none
+                  &none  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK  &none  &none  &none
+&kp LEFT_CONTROL  &none  &none                 &kp ENTER             &none              &none     &mo 9  &none      &none  &none  &none  &kp LEFT_CONTROL
+                                               &trans                &trans             &trans    &mo 4  &mo 5      &mo 6
             >;
         };
 
