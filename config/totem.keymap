@@ -54,37 +54,37 @@
             timeout-ms = <20>;
         };
 
-        Lbrace_1 {
+        Lbrace_0 {
             bindings = <&kt LEFT_BRACE>;
             key-positions = <6 7>;
-            layers = <1>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
-        Rbrace_1 {
+        Rbrace_0 {
             bindings = <&kt RIGHT_BRACE>;
             key-positions = <7 8>;
-            layers = <1>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
-        Lbracket_1 {
+        Lbracket_0 {
             bindings = <&kt LEFT_BRACKET>;
             key-positions = <16 17>;
-            layers = <1>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
-        Rbracket_1 {
+        Rbracket_0 {
             bindings = <&kt RIGHT_BRACKET>;
             key-positions = <17 18>;
-            layers = <1>;
+            layers = <0>;
             timeout-ms = <20>;
         };
 
         Comma_1 {
             bindings = <&kp COMMA>;
-            key-positions = <8 9>;
+            key-positions = <29 28>;
             layers = <1>;
             timeout-ms = <20>;
         };
