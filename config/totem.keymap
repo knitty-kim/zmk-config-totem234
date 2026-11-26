@@ -32,14 +32,14 @@
 
         kor+eng {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <28 27>;
-            layers = <1>;
+            key-positions = <28 29>;
+            layers = <0>;
             require-prior-idle-ms = <0>;
         };
 
         kor+chn {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <28 29>;
+            key-positions = <29 27>;
             layers = <1>;
             require-prior-idle-ms = <0>;
         };
@@ -52,27 +52,45 @@
             timeout-ms = <300>;
         };
 
-        Lbrace {
+        Lbrace_1 {
             bindings = <&kt LEFT_BRACE>;
             key-positions = <6 7>;
             layers = <1>;
         };
 
-        Rbrace {
+        Rbrace_1 {
             bindings = <&kt RIGHT_BRACE>;
             key-positions = <7 8>;
             layers = <1>;
         };
 
-        Lbracket {
+        Lbracket_1 {
             bindings = <&kt LEFT_BRACKET>;
             key-positions = <16 17>;
             layers = <1>;
         };
 
-        Rbracket {
+        Rbracket_1 {
             bindings = <&kt RIGHT_BRACKET>;
             key-positions = <17 18>;
+            layers = <1>;
+        };
+
+        Lpar_1 {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <27 28>;
+            layers = <1>;
+        };
+
+        Rpar_1 {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <28 29>;
+            layers = <1>;
+        };
+
+        Comma_1 {
+            bindings = <&kp COMMA>;
+            key-positions = <29 30>;
             layers = <1>;
         };
     };
