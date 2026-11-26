@@ -32,26 +32,48 @@
 
         kor+eng {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <28 29 36>;
-            layers = <0>;
+            key-positions = <28 27>;
+            layers = <1>;
             require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
         };
 
         kor+chn {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <28 30 36>;
+            key-positions = <28 29>;
+            layers = <1>;
+            require-prior-idle-ms = <0>;
+        };
+
+        capslo {
+            bindings = <&kp CAPS>;
+            key-positions = <30 29>;
             layers = <0>;
             require-prior-idle-ms = <0>;
             timeout-ms = <300>;
         };
 
-        capslo {
-            bindings = <&kp CAPS>;
-            key-positions = <30 29 36>;
-            layers = <0>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
+        Lbrace {
+            bindings = <&kt LEFT_BRACE>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
+
+        Rbrace {
+            bindings = <&kt RIGHT_BRACE>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        Lbracket {
+            bindings = <&kt LEFT_BRACKET>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        Rbracket {
+            bindings = <&kt RIGHT_BRACKET>;
+            key-positions = <17 18>;
+            layers = <1>;
         };
     };
 
@@ -80,17 +102,17 @@
             bindings = <
                   &none           &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &kp TILDE    &mo 7  &mkp LCLK        &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
                   &kp LEFT_SHIFT  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &kp PIPE     &mo 8  &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&kp LEFT_CONTROL  &none           &kp LESS_THAN         &kp ENTER             &kp GREATER_THAN   &none        &mo 9  &kp EXCLAMATION  &kp LPAR          &kp RPAR           &kp QUESTION  &kp LEFT_CONTROL
+&kp LEFT_CONTROL  &none           &none                 &kp ENTER             &none              &none        &mo 9  &kp EXCLAMATION  &kp LPAR          &kp RPAR           &kp QUESTION  &kp LEFT_CONTROL
                                                         &trans                &trans             &trans       &mo 4  &mo 5            &mo 6
             >;
         };
 
         device {
             bindings = <
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp F7  &kp F8  &kp F9  &kp F12
-            &kp C_BRI_UP  &kp C_VOL_UP  &bt BT_CLR_ALL  &out OUT_USB  &out OUT_BLE    &none   &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_CLR  &kp C_BRI_DN  &kp C_VOL_DN  &none           &none         &none           &none   &kp F1  &kp F2  &kp F3  &kp F10  &kp LEFT_CONTROL
-                                        &trans          &trans        &trans          &trans  &trans  &trans
+           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none   &kp F7  &kp F8  &kp F9  &kp F12
+           &kp C_BRI_UP  &kp C_VOL_UP  &none         &out OUT_USB  &out OUT_BLE      &none   &kp F4  &kp F5  &kp F6  &kp F11
+&kp LCTRL  &kp C_BRI_DN  &kp C_VOL_DN  &none         &bt BT_CLR    &bt BT_CLR_ALL    &none   &kp F1  &kp F2  &kp F3  &kp F10  &kp LEFT_CONTROL
+                                       &trans        &trans        &trans            &trans  &trans  &trans
             >;
         };
 
