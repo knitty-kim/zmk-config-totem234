@@ -30,68 +30,63 @@
     combos {
         compatible = "zmk,combos";
 
-        kor+eng {
+        kor+eng_01 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <28 29>;
-            layers = <0>;
+            key-positions = <28 27>;
+            layers = <0 1>;
             require-prior-idle-ms = <0>;
+            timeout-ms = <100>;
         };
 
-        kor+chn {
+        kor+chn_01 {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <29 27>;
-            layers = <1>;
+            key-positions = <29 28>;
+            layers = <1 0>;
             require-prior-idle-ms = <0>;
+            timeout-ms = <100>;
         };
 
-        capslo {
+        capslo_01 {
             bindings = <&kp CAPS>;
-            key-positions = <30 29>;
-            layers = <0>;
+            key-positions = <29 27>;
+            layers = <0 1>;
             require-prior-idle-ms = <0>;
-            timeout-ms = <300>;
+            timeout-ms = <100>;
         };
 
         Lbrace_1 {
             bindings = <&kt LEFT_BRACE>;
             key-positions = <6 7>;
             layers = <1>;
+            timeout-ms = <100>;
         };
 
         Rbrace_1 {
             bindings = <&kt RIGHT_BRACE>;
             key-positions = <7 8>;
             layers = <1>;
+            timeout-ms = <100>;
         };
 
         Lbracket_1 {
             bindings = <&kt LEFT_BRACKET>;
             key-positions = <16 17>;
             layers = <1>;
+            timeout-ms = <100>;
         };
 
         Rbracket_1 {
             bindings = <&kt RIGHT_BRACKET>;
             key-positions = <17 18>;
             layers = <1>;
+            timeout-ms = <100>;
         };
 
-        Lpar_1 {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <27 28>;
-            layers = <1>;
-        };
-
-        Rpar_1 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <28 29>;
-            layers = <1>;
-        };
-
-        Comma_1 {
+        Comma_01 {
             bindings = <&kp COMMA>;
             key-positions = <29 30>;
-            layers = <1>;
+            layers = <1 0>;
+            timeout-ms = <100>;
         };
     };
 
