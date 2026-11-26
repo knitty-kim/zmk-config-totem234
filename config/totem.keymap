@@ -30,11 +30,12 @@
     combos {
         compatible = "zmk,combos";
 
-        kor+eng_01 {
+        kor+eng_0 {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <28 27>;
-            layers = <0 1>;
+            layers = <0>;
             require-prior-idle-ms = <0>;
+            timeout-ms = <20>;
         };
 
         kor+chn_01 {
@@ -42,43 +43,50 @@
             key-positions = <29 28>;
             layers = <1 0>;
             require-prior-idle-ms = <0>;
+            timeout-ms = <20>;
         };
 
-        capslo_01 {
+        capslo_0 {
             bindings = <&kp CAPS>;
             key-positions = <29 27>;
-            layers = <0 1>;
+            layers = <0>;
             require-prior-idle-ms = <0>;
+            timeout-ms = <20>;
         };
 
-        Lbrace_1 {
+        Lbrace_01 {
             bindings = <&kt LEFT_BRACE>;
             key-positions = <6 7>;
-            layers = <1>;
+            layers = <1 0>;
+            timeout-ms = <20>;
         };
 
-        Rbrace_1 {
+        Rbrace_01 {
             bindings = <&kt RIGHT_BRACE>;
             key-positions = <7 8>;
-            layers = <1>;
+            layers = <1 0>;
+            timeout-ms = <20>;
         };
 
-        Lbracket_1 {
+        Lbracket_01 {
             bindings = <&kt LEFT_BRACKET>;
             key-positions = <16 17>;
-            layers = <1>;
+            layers = <1 0>;
+            timeout-ms = <20>;
         };
 
-        Rbracket_1 {
+        Rbracket_01 {
             bindings = <&kt RIGHT_BRACKET>;
             key-positions = <17 18>;
-            layers = <1>;
+            layers = <1 0>;
+            timeout-ms = <20>;
         };
 
         Comma_01 {
             bindings = <&kp COMMA>;
-            key-positions = <29 30>;
-            layers = <1 0>;
+            key-positions = <8 9>;
+            layers = <1>;
+            timeout-ms = <20>;
         };
     };
 
