@@ -30,60 +30,11 @@
     combos {
         compatible = "zmk,combos";
 
-        kor+eng_0 {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <28 27 36>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        kor+chn_0 {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <29 36 28>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        capslo_0 {
-            bindings = <&kp CAPS>;
-            key-positions = <29 36 27>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        Lbrace_0 {
-            bindings = <&kt LEFT_BRACE>;
-            key-positions = <6 7 36>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        Rbrace_0 {
-            bindings = <&kt RIGHT_BRACE>;
-            key-positions = <7 8 36>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        Lbracket_0 {
-            bindings = <&kt LEFT_BRACKET>;
-            key-positions = <16 17 36>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        Rbracket_0 {
-            bindings = <&kt RIGHT_BRACKET>;
-            key-positions = <17 18 36>;
-            layers = <0>;
-            require-prior-idle-ms = <160>;
-        };
-
-        Comma_1 {
-            bindings = <&kp COMMA>;
-            key-positions = <9 8 36>;
+        equal_1 {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <35 36>;
             layers = <1>;
-            require-prior-idle-ms = <160>;
+            timeout-ms = <100>;
         };
     };
 
@@ -104,16 +55,16 @@
                   &kp ESC      &kp BACKSPACE  &kp UP     &kp DELETE  &kp GRAVE        &kp PLUS   &kp N7          &kp N8        &kp N9  &kp PERIOD
                   &kp TAB      &kp LEFT       &kp DOWN   &kp RIGHT   &kp BACKSLASH    &kp MINUS  &kp N4          &kp N5        &kp N6  &kp ASTERISK
 &kp LEFT_CONTROL  &kp PAGE_UP  &kp HOME       &kp ENTER  &kp END     &kp PAGE_DOWN    &kp N0     &kp N1          &kp N2        &kp N3  &kp SLASH     &kp LEFT_CONTROL
-                                              &trans     &trans      &trans           &kp EQUAL  &kp LEFT_SHIFT  &kp LEFT_ALT
+                                              &trans     &trans      &trans           &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT
             >;
         };
 
         mous-1000 {
             bindings = <
-                  &none  &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &none     &mo 7  &mkp LCLK  &none  &none  &none
-                  &none  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK  &none  &none  &none
-&kp LEFT_CONTROL  &none  &none                 &kp ENTER             &none              &none     &mo 9  &none      &none  &none  &none  &kp LEFT_CONTROL
-                                               &trans                &trans             &trans    &mo 4  &mo 5      &mo 6
+                  &none  &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &none     &mo 7  &mkp LCLK       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+                  &none  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp LEFT_CONTROL  &none  &none                 &kp ENTER             &none              &none     &mo 9  &kp LANGUAGE_1  &kp CAPS          &kp LANGUAGE_2     &none  &kp LEFT_CONTROL
+                                               &trans                &trans             &trans    &mo 4  &mo 5           &mo 6
             >;
         };
 
