@@ -31,7 +31,7 @@
         compatible = "zmk,combos";
 
         equal_1 {
-            bindings = <&kp KP_EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <35 36>;
             layers = <1>;
             timeout-ms = <100>;
