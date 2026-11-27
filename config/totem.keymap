@@ -61,10 +61,10 @@
 
         mous-1000 {
             bindings = <
-                  &none  &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &none     &mo 7  &mkp LCLK       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-                  &none  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&kp LEFT_CONTROL  &none  &none                 &kp ENTER             &none              &none     &mo 9  &kp LANGUAGE_1  &kp CAPS          &kp LANGUAGE_2     &none  &kp LEFT_CONTROL
-                                               &trans                &trans             &trans    &mo 4  &mo 5           &mo 6
+                  &none  &kp BACKSPACE         &mmv (MOVE_Y(-1000))  &kp DELETE         &none     &mo 7  &mkp LCLK  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+                  &none  &mmv (MOVE_X(-1000))  &mmv MOVE_Y(1000)     &mmv MOVE_X(1000)  &none     &mo 8  &mkp RCLK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&kp LEFT_CONTROL  &none  &none                 &kp ENTER             &none              &none     &mo 9  &kp CAPS   &kp LANG1         &kp LANGUAGE_2     &none  &kp LEFT_CONTROL
+                                               &trans                &trans             &trans    &mo 4  &mo 5      &mo 6
             >;
         };
 
