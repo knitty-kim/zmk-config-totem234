@@ -35,7 +35,6 @@
             key-positions = <28 27 36>;
             layers = <0>;
             require-prior-idle-ms = <160>;
-            timeout-ms = <25>;
         };
 
         kor+chn_0 {
@@ -43,7 +42,6 @@
             key-positions = <29 36 28>;
             layers = <0>;
             require-prior-idle-ms = <160>;
-            timeout-ms = <25>;
         };
 
         capslo_0 {
@@ -51,14 +49,12 @@
             key-positions = <29 36 27>;
             layers = <0>;
             require-prior-idle-ms = <160>;
-            timeout-ms = <25>;
         };
 
         Lbrace_0 {
             bindings = <&kt LEFT_BRACE>;
             key-positions = <6 7 36>;
             layers = <0>;
-            timeout-ms = <25>;
             require-prior-idle-ms = <160>;
         };
 
@@ -66,7 +62,6 @@
             bindings = <&kt RIGHT_BRACE>;
             key-positions = <7 8 36>;
             layers = <0>;
-            timeout-ms = <25>;
             require-prior-idle-ms = <160>;
         };
 
@@ -74,7 +69,6 @@
             bindings = <&kt LEFT_BRACKET>;
             key-positions = <16 17 36>;
             layers = <0>;
-            timeout-ms = <25>;
             require-prior-idle-ms = <160>;
         };
 
@@ -82,7 +76,6 @@
             bindings = <&kt RIGHT_BRACKET>;
             key-positions = <17 18 36>;
             layers = <0>;
-            timeout-ms = <25>;
             require-prior-idle-ms = <160>;
         };
 
@@ -90,7 +83,6 @@
             bindings = <&kp COMMA>;
             key-positions = <9 8 36>;
             layers = <1>;
-            timeout-ms = <40>;
             require-prior-idle-ms = <160>;
         };
     };
